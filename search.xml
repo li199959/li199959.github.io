@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>nlp发展过程</title>
+      <link href="/2023/03/13/markdown/yufa/"/>
+      <url>/2023/03/13/markdown/yufa/</url>
+      
+        <content type="html"><![CDATA[<p>markdown语法教程: </p><p>一、标题</p><ol><li>#后面加的文字表示一级标题</li><li>##表示二级标题 一般有六级标题</li></ol><h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>二、引用</p><p>引用 &gt;这是一段引用</p><blockquote><p>这是一段引用</p></blockquote><p>三、列表</p><p>有序列表：</p><p>把大象装进冰箱: </p><ol><li>打开冰箱</li><li>把大象放进去</li><li>关上冰箱</li></ol><p>无序列表：</p><ul><li>徐凤年</li><li>温华</li><li>洛阳</li><li>南宫朴耶</li></ul><p>明天要做的事：</p><ul><li><p><input disabled="" type="checkbox"> 吃饭</p></li><li><p><input checked="" disabled="" type="checkbox"> 睡觉打豆豆</p></li><li><p><input checked="" disabled="" type="checkbox"> 打豆豆</p></li></ul><p>这个任务列表是可以勾选的</p><p>四、代码块</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>五、 数学公式<br>$$</p><p>$$<br>六、 表格</p><table><thead><tr><th align="center">姓名</th><th align="center">年龄</th><th align="right">成绩</th><th></th><th></th></tr></thead><tbody><tr><td align="center">李向彬</td><td align="center">24</td><td align="right">100</td><td></td><td></td></tr><tr><td align="center"></td><td align="center"></td><td align="right"></td><td></td><td></td></tr><tr><td align="center"></td><td align="center"></td><td align="right"></td><td></td><td></td></tr><tr><td align="center"></td><td align="center"></td><td align="right"></td><td></td><td></td></tr><tr><td align="center"></td><td align="center"></td><td align="right"></td><td></td><td></td></tr></tbody></table><p>|姓名|年龄|成绩|    这是他的格式</p><p>七、脚注</p><p>一个名词<a href="%E8%BF%99%E4%B8%AA%E5%90%8D%E8%AF%8D%E7%9A%84%E8%A7%A3%E9%87%8A">^注释</a></p><p>文章的结尾可以把这个注释解释一下</p><p>八、横线</p><hr><p>三个 — 表示一个横线</p><p>哈哈哈</p><p>九、链接</p><p><a href="baidu.com">百度</a>‘’ 一个搜素哦引擎 ‘’  []里面是链接名字比如’‘百度’‘，后面跟一个英语括号</p><p>还有标题</p><p>请参考<a href="#%E6%A0%87%E9%A2%98%E4%B8%80">标题一</a></p><p>然后ctrl按住标题一就可以跳转</p><p>ulr：<br><a href="http://www.baidu.com/">http://www.baidu.com</a></p><p><img src="/" alt="百度"></p><p>十、字体格式</p><p>**中间是斜体</p><p><em>斜体</em></p><p>** ** 是加粗</p><p><strong>加粗</strong></p><p>下划线是<u>  </u></p><p><u>xiahuaxian</u></p><p>笑脸是：smile：</p><p>:smile:</p><p>一般公式：</p><p>$\theta&#x3D;x^2$</p><p>高亮文字 &#x3D;&#x3D; 中间不能有空格文字&#x3D;&#x3D;</p><p>&#x3D;&#x3D;你好&#x3D;&#x3D;</p><p>X^2^  x^2^</p><p>上标是^^中间是数字</p><p>下标是~~中间是数字</p><p>h<del>2</del>0</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nlp发展过程</title>
+      <link href="/2023/03/13/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/"/>
+      <url>/2023/03/13/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="nlp发展史"><a href="#nlp发展史" class="headerlink" title="nlp发展史"></a>nlp发展史</h1><p>​预训练过程，会大致说下NLP中的预训练技术是一步一步如何发展到Bert模型的，从中可以很自然地看到Bert的思路是如何逐渐形成的，Bert的历史沿革是什么，继承了什么，创新了什么，为什么效果那么好，主要原因是什么，以及为何说模型创新不算太大，为何说Bert是近年来NLP重大进展的<em>集大成者</em> 。我们一步一步来讲，而串起来这个故事的脉络就是自然语言的预训练过程，但是落脚点还是在Bert身上。要讲自然语言的预训练，得先从图像领域的预训练说起。</p><h2 id="1-预训练是什么"><a href="#1-预训练是什么" class="headerlink" title="1.预训练是什么"></a>1.预训练是什么</h2><p>通过一个已经训练好的模型 A，去完成一个小数据量的任务 B（使用了模型 A 的浅层参数）</p><p>其中呢，任务 A 与任务 B 是相似的</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>代码演示</title>
       <link href="/2023/03/03/%E4%BB%A3%E7%A0%81%E5%9D%97/%E6%BC%94%E7%A4%BA/"/>
       <url>/2023/03/03/%E4%BB%A3%E7%A0%81%E5%9D%97/%E6%BC%94%E7%A4%BA/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">a</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello,world&quot;</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用</p><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用</p>]]></content>
+        <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">a</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello,world&quot;</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用</p><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用<br>演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用演示作用</p><p>$\alpha_{i}&#x3D;\operatorname{softmax}\left(\frac{q_{i} \cdot k_{1}}{\sqrt{d}}, \frac{q_{i} \cdot k_{2}}{\sqrt{d}}, \ldots, \frac{q_{i} \cdot k_{N}}{\sqrt{d}}\right)$</p>]]></content>
       
       
       
