@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>mysql的增删改查用法 | 李向彬的博客</title><meta name="author" content="李向彬"><meta name="copyright" content="李向彬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="文字与图片展示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql的增删改查用法">
+<meta property="og:url" content="http://example.com/2023/03/14/mysql/mysql/index.html">
+<meta property="og:site_name" content="李向彬的博客">
+<meta property="og:description" content="文字与图片展示">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://w.wallhaven.cc/full/we/wallhaven-we1ml7.png">
+<meta property="article:published_time" content="2023-03-14T08:44:32.265Z">
+<meta property="article:modified_time" content="2023-03-14T13:32:42.705Z">
+<meta property="article:author" content="李向彬">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://w.wallhaven.cc/full/we/wallhaven-we1ml7.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/03/14/mysql/mysql/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'mysql的增删改查用法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: false,
+  postUpdate: '2023-03-14 21:32:42'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><div class="aplayer no-destroy" data-id="7869929506" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic2.zhimg.com/v2-76da8dacf0b1020f73223e3f5721dbfd_b.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://w.wallhaven.cc/full/o5/wallhaven-o5ylkp.png')"><nav id="nav"><span id="blog-info"><a href="/" title="李向彬的博客"><span class="site-name">李向彬的博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">mysql的增删改查用法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-14T08:44:32.265Z" title="发表于 2023-03-14 16:44:32">2023-03-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-14T13:32:42.705Z" title="更新于 2023-03-14 21:32:42">2023-03-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">639</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="mysql的增删改查用法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1.下载完MYSQL后，创建一个新的数据库，然后按下图所示点击：</p>
+<ol>
+<li>点击查询 </li>
+<li>点击新建查询；<br><img src="https://jsd.cdn.zzko.cn/gh/li199959/imgbed@main/20230314/image.1en2sj08sxb4.webp" alt="image"></li>
+</ol>
+<p>2.出现查询的框，我们就可以在框内写入相应代码：<br><img src="https://jsd.cdn.zzko.cn/gh/li199959/imgbed@main/20230314/image.6epy43fkn4g0.webp" alt="image"></p>
+<p>3.首先对于MYSQL的增删改查来说，我们先说增，这里就举创建一个学生管理的列表：<br>具体的语法是</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table 表的名字 (</span><br><span class="line">    stuid <span class="type">int</span> not null auto_increment primary key，学生的id <span class="type">int</span>型 自增</span><br><span class="line">    stuname varchar(<span class="number">200</span>), 学生的名称 <span class="number">200</span>表示最多容纳<span class="number">200</span>字符</span><br><span class="line">    stustatus varchar(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">); </span><br><span class="line"># 括号里面可以定义表的属性</span><br></pre></td></tr></table></figure>
+<p>然后按照所学的语法创建一个名为student、grade的表就创建完成</p>
+<p><img src="https://jsd.cdn.zzko.cn/gh/li199959/imgbed@main/20230314/image.57pi3gry4jg0.webp" alt="image"></p>
+<p><strong>需要注意的是，执行程序的时候有键选取执行区域然后就会执行那一小段代码</strong></p>
+<p>4.表格创建完之后，我们要往表格内增添内容，比如添加学生，还有学生的成绩：<br>这里就要用到：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into <span class="title function_">student</span><span class="params">(stuname,stustatus)</span> <span class="title function_">values</span> <span class="params">(<span class="string">&#x27;zhangsan&#x27;</span>,<span class="string">&#x27;Normal&#x27;</span>)</span></span><br></pre></td></tr></table></figure>
+<p>我们可以看到，student 表格中新建了一个  zhangsan 的数据；</p>
+<p><img src="https://cdn.staticaly.com/gh/li199959/imgbed@main/20230314/image.73c7zul89n80.webp" alt="image"></p>
+<p>我们再添加几条数据，数据是自增的序号从1往下排，添加grade内数据同样的道理；</p>
+<p><img src="https://cdn.staticaly.com/gh/li199959/imgbed@main/20230314/image.rz7dgi7swls.webp" alt="image"></p>
+<p>5.上面是增加的大致内容，下面就介绍一下删除是如何进行的：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">delete from 表的名字 ;</span><br><span class="line">delete from student where stuid = <span class="number">1</span>;# 把id为<span class="number">1</span>的学生数据删除</span><br><span class="line">这是delete，还有两种常见的删除 truncate 与 drop</span><br><span class="line">truncate table student；</span><br><span class="line">drop table student</span><br><span class="line">具体的区别是truncate删除完后，再添加新的数据，前面会重新排，不会把<span class="number">123</span>删除了，再加进去一个是从<span class="number">4</span>开始，还是从<span class="number">1</span>开始，然而delete是<span class="number">4</span>开始，它是不重新排的；</span><br></pre></td></tr></table></figure>
+<p>下面是把id&#x3D;2的学生数据删除，可以从表中可以看到，id&#x3D;2的学生数据已经被清空，不加后面限制条件，是把所有数据都清空；</p>
+<p><img src="https://cdn.staticaly.com/gh/li199959/imgbed@main/20230314/image.7910zaocqpg0.webp" alt="image"></p>
+<p>6.下面介绍一下改的操作</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 主要就是update</span><br><span class="line">update student <span class="built_in">set</span> stuname=<span class="string">&#x27;zhangsan&#x27;</span>,stustatus = <span class="string">&#x27;Dropped&#x27;</span> where stuid=<span class="number">5</span></span><br><span class="line">#这句话的作用是把id为<span class="number">5</span>的学生姓名，与上学的状态都修改了</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>下面是对student中id&#x3D;1的学生的修改：<br><img src="https://cdn.staticaly.com/gh/li199959/imgbed@main/20230314/image.5k3cilm0dzc0.webp" alt="image"></p>
+<p>7.下面是对查询的介绍</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select *from student；</span><br><span class="line"># 不加限制条件是对于整个表的查询</span><br><span class="line">select *from student where stuid =<span class="number">5</span>（后面是要查询的字段）；</span><br><span class="line"># 也可以明确要查询哪个字段</span><br><span class="line">select stuname,stustatus from student where stuid =<span class="number">5</span></span><br><span class="line"># 星号被替换为具体的内容</span><br></pre></td></tr></table></figure>
+<p>下图是查询的几种放式：</p>
+<p><img src="https://cdn.staticaly.com/gh/li199959/imgbed@main/20230314/image.32qq4df0bki0.webp" alt="image"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">李向彬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/03/14/mysql/mysql/">http://example.com/2023/03/14/mysql/mysql/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">李向彬的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://w.wallhaven.cc/full/we/wallhaven-we1ml7.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/03/13/markdown/yufa/" title="markdown基本语法"><img class="cover" src="https://w.wallhaven.cc/full/y8/wallhaven-y8622k.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">markdown基本语法</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://pic2.zhimg.com/v2-76da8dacf0b1020f73223e3f5721dbfd_b.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李向彬</div><div class="author-info__description">向彬的博客，欢迎访问</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到陈平安的博客</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/03/14/mysql/mysql/" title="mysql的增删改查用法"><img src="https://w.wallhaven.cc/full/we/wallhaven-we1ml7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql的增删改查用法"/></a><div class="content"><a class="title" href="/2023/03/14/mysql/mysql/" title="mysql的增删改查用法">mysql的增删改查用法</a><time datetime="2023-03-14T08:44:32.265Z" title="发表于 2023-03-14 16:44:32">2023-03-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/13/markdown/yufa/" title="markdown基本语法"><img src="https://w.wallhaven.cc/full/y8/wallhaven-y8622k.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown基本语法"/></a><div class="content"><a class="title" href="/2023/03/13/markdown/yufa/" title="markdown基本语法">markdown基本语法</a><time datetime="2023-03-13T12:21:27.518Z" title="发表于 2023-03-13 20:21:27">2023-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/13/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/" title="nlp发展过程"><img src="https://w.wallhaven.cc/full/jx/wallhaven-jxe7xq.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="nlp发展过程"/></a><div class="content"><a class="title" href="/2023/03/13/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/nlp%E5%8F%91%E5%B1%95%E5%8F%B2/" title="nlp发展过程">nlp发展过程</a><time datetime="2023-03-13T12:07:00.666Z" title="发表于 2023-03-13 20:07:00">2023-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/03/%E4%BB%A3%E7%A0%81%E5%9D%97/%E6%BC%94%E7%A4%BA/" title="代码演示"><img src="https://w.wallhaven.cc/full/jx/wallhaven-jxe7xq.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="代码演示"/></a><div class="content"><a class="title" href="/2023/03/03/%E4%BB%A3%E7%A0%81%E5%9D%97/%E6%BC%94%E7%A4%BA/" title="代码演示">代码演示</a><time datetime="2023-03-03T15:50:51.080Z" title="发表于 2023-03-03 23:50:51">2023-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/03/hello-world/" title="Hello World"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2023/03/03/hello-world/" title="Hello World">Hello World</a><time datetime="2023-03-03T09:18:43.925Z" title="发表于 2023-03-03 17:18:43">2023-03-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://w.wallhaven.cc/full/o5/wallhaven-o5ylkp.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 李向彬</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你😂</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
