@@ -30,6 +30,12 @@
         <content type="html"><![CDATA[<h1>nlp发展史</h1><p>​预训练过程，会大致说下NLP中的预训练技术是一步一步如何发展到Bert模型的，从中可以很自然地看到Bert的思路是如何逐渐形成的，Bert的历史沿革是什么，继承了什么，创新了什么，为什么效果那么好，主要原因是什么，以及为何说模型创新不算太大，为何说Bert是近年来NLP重大进展的<em>集大成者</em> 。我们一步一步来讲，而串起来这个故事的脉络就是自然语言的预训练过程，但是落脚点还是在Bert身上。要讲自然语言的预训练，得先从图像领域的预训练说起。</p><h2 id="1-预训练是什么">1.预训练是什么</h2><p>通过一个已经训练好的模型 A，去完成一个小数据量的任务 B（使用了模型 A 的浅层参数）</p><p>其中呢，任务 A 与任务 B 是相似的</p>]]></content>
       
       
+      <categories>
+          
+          <category> NLP </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -45,7 +51,7 @@
       
       <categories>
           
-          <category> mysql </category>
+          <category> 计算机基础 </category>
           
       </categories>
       
