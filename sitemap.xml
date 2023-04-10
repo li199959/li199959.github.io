@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://li199959.github.io/box/animation/index.html</loc>
+    <loc>https://li199959.github.io/life/games/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://li199959.github.io/life/music/index.html</loc>
+    <loc>https://li199959.github.io/box/animation/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -245,61 +245,7 @@
   </url>
   
   <url>
-    <loc>https://li199959.github.io/life/games/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://li199959.github.io/life/movies/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://li199959.github.io/personal/about/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://li199959.github.io/personal/love/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://li199959.github.io/site/census/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://li199959.github.io/site/time/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://li199959.github.io/personal/bb/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -317,7 +263,61 @@
   </url>
   
   <url>
+    <loc>https://li199959.github.io/personal/bb/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/life/movies/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/life/music/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/site/time/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/site/census/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://li199959.github.io/social/link/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/personal/love/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -397,13 +397,6 @@
   </url>
   
   <url>
-    <loc>https://li199959.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2023-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://li199959.github.io/categories/markdown/</loc>
     <lastmod>2023-04-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -411,7 +404,7 @@
   </url>
   
   <url>
-    <loc>https://li199959.github.io/categories/%E7%BB%84%E4%BC%9A/</loc>
+    <loc>https://li199959.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -419,6 +412,13 @@
   
   <url>
     <loc>https://li199959.github.io/categories/NLP/</loc>
+    <lastmod>2023-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://li199959.github.io/categories/%E7%BB%84%E4%BC%9A/</loc>
     <lastmod>2023-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
