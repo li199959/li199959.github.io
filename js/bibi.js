@@ -3,7 +3,8 @@ let total = 0
 let nowNum = 0
 let items = []
 let page = 1
-let Url = 'https://memos-xb.zeabur.app/api/memo?openId=82f5f957-1fbe-4149-ae94-98e938e0691d&page=' // https://kkapi.fomal.cc/api/ispeak?author=6319fedef46fae97dcfa5ee2&page=记住替换为你的API链接https://memos-xb.zeabur.app/api/memo?openId=82f5f957-1fbe-4149-ae94-98e938e0691d
+let Url = 'https://kkapi.fomal.cc/api/ispeak?author=6319fedef46fae97dcfa5ee2&page='
+//  https://kkapi.fomal.cc/api/ispeak?author=6319fedef46fae97dcfa5ee2&page=记住替换为你的API链接https://memos-xb.zeabur.app/api/memo?openId=82f5f957-1fbe-4149-ae94-98e938e0691d
 
 
 window.addEventListener('DOMContentLoaded', () => {
