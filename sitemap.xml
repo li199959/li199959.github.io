@@ -209,24 +209,6 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/tags/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiangbin.online/box/nav/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xiangbin.online/box/animation/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -254,15 +236,6 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/life/movies/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xiangbin.online/life/music/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -272,7 +245,16 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/personal/love/index.html</loc>
+    <loc>https://xiangbin.online/life/movies/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiangbin.online/tags/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -290,15 +272,6 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/social/fcircle/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xiangbin.online/site/census/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -308,7 +281,25 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/site/time/index.html</loc>
+    <loc>https://xiangbin.online/personal/love/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiangbin.online/social/fcircle/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiangbin.online/box/nav/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -318,6 +309,15 @@
   
   <url>
     <loc>https://xiangbin.online/social/link/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiangbin.online/site/time/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -383,7 +383,14 @@
 
   
   <url>
-    <loc>https://xiangbin.online/categories/markdown/</loc>
+    <loc>https://xiangbin.online/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiangbin.online/categories/Java/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -397,13 +404,6 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2023-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xiangbin.online/categories/NLP/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -411,7 +411,7 @@
   </url>
   
   <url>
-    <loc>https://xiangbin.online/categories/Java/</loc>
+    <loc>https://xiangbin.online/categories/markdown/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
